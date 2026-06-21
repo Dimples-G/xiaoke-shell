@@ -159,19 +159,3 @@ cargo test --test '*'     # 运行集成测试
 | actions | 11 | 文件大小格式化、闰年判断、表达式计算、待办操作、注释处理 |
 | display | 6 | 显示宽度计算（ASCII/CJK/Emoji）、框线生成 |
 | games | 2 | 关键词匹配 |
-
-## 作业合规清单
-
-- [x] 总行数 2751（1500~3000）
-- [x] 6 个模块（≥3）
-- [x] `cargo fmt` 通过
-- [x] `cargo clippy` 零警告
-- [x] 47 个测试全部通过
-- [x] 自定义 trait：`Matcher`（含默认方法）
-- [x] 泛型：`best_match<M: Matcher>`、`search_files_recursive<P: AsRef<Path>>`
-- [x] 生命周期注解：`strip_comments<'a>`、`extract_between<'a>`、`best_match<'a, M>`
-- [x] 结构体/枚举：`Intent`、`Token`、`ShellError`、`TodoItem`、`KeywordMatcher`
-- [x] 所有权/借用：全项目优先借用传递
-- [x] 并发：`thread::spawn` + `mpsc::channel`
-- [x] 错误处理：`ShellError` + `ShellResult<T>` + `?` 传播
-- [x] README 文档
