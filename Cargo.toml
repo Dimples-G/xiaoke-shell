@@ -1,0 +1,9 @@
+[package]
+name = "custom_shell"
+version = "0.2.0"
+edition = "2024"
+
+[dependencies]
+rustyline = "15"
+colored = "2"
+rand = "0.8"
